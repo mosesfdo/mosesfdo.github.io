@@ -3,11 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <p>This is a simple HTML document.</p>
-    <p>Feel free to explore and modify it!</p>
+    <header>
+        <img src="Assets/mosesfdo-main-logo.svg" alt="mosesfdo-main-logo" class="logo">
+        <nav>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="#contact" id="contact-link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section wrapper" id="home">
+            <div class="hero-text">
+                <p>Hi, Im Moses and Im a student</p>
+                <h1> Ai Engineer
+                <br>& Web Developer </h1>
+            </div>
+            <div >
+                <img src="Assets/main-picture.png" alt="" class="hero-picture">
+            </div>
+        </section>
+
+        <section class="about-section ">
+            <div class="main-head-text">
+                <h1>
+                    Living affirmation that cognitive 
+                    excellence pairs well with 
+                    extreme physical reluctance.
+                </h1>
+                <img src="Assets/beserk.png" alt="graphic" class="about-graphic">
+            </div>
+
+
+            <div class="about-text">
+                <img src="Assets/mo-se.svg" alt="japanese name" class="japanese-name">
+
+                <div class="about-sub-content">
+                <p>
+                    A curious and methodical thinker, constantly exploring creativity and innovation in the realms of computer science and AI/ML.
+                </p>
+                <p>
+                    Moses is a student of Computer Science and AI/ML  driven by a deep curiosity that fuels his passion for problem-solving and UI design. He thrives on prototyping new interfaces and experimenting with emerging tools, blending a structured approach with a spirit of discovery.
+                </p>
+                <p>
+                    His technical toolkit includes Python, HTML, and CSS, reflecting a solid foundation in programming and web technologies. Outside academics, Moses balances coding side projects with working out and immersing himself in anime culture. At heart, he is a coder refining his craft, a fitness enthusiast pushing his limits, and an anime fan savoring stories. Always learning — always driven by the endless possibilities of technology and design.
+                </p>
+                <p>
+                    Hope to creating projects that make me even lazier.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
 </body>
 </html>

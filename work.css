@@ -1,0 +1,378 @@
+/* Import Media Sans font variants */
+@font-face {
+    font-family: 'Media Sans';
+    src: url('Assets/Fonts/mediasans-regular-TRIAL-BF63c75479e5ff3.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Media Sans';
+    src: url('Assets/Fonts/mediasans-bold-TRIAL-BF63c7546b153ef.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Media Sans';
+    src: url('Assets/Fonts/mediasans-black-TRIAL-BF63c7546b0dca7.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Media Sans';
+    src: url('Assets/Fonts/mediasans-italic-TRIAL-BF63c75479eeac6.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Media Sans';
+    src: url('Assets/Fonts/mediasans-bolditalic-TRIAL-BF63c7546b5d1a5.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Import SF Pro Display font variants */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('Assets/Fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Media Sans';
+    background-color: #141414;
+    color: #ffffff;
+}
+
+p{
+    font-family: 'SF Pro Display';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Media Sans';
+    font-weight: 900;
+}
+
+
+::selection {
+    background-color: #ffffff;
+    color: #141414;
+}
+
+section{
+    padding: 80px 0;
+    margin: 0 auto;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+
+
+header{
+    height: 123px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color:#141414;
+}
+
+.logo{
+    width: 362px;
+    height:70px;
+    display: flex;
+    margin: auto 0  ;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+nav ul li{
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+   text-decoration: none;
+   font-family: "SF Pro Display";
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: #ffffff;
+   align-items: center;
+}
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 200;
+}
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+    display: block;
+}
+
+/* Hamburger open state */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+
+.wrapper{
+    margin:auto 80px;
+}
+
+#contact-link {
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #141414;
+}
+
+
+.projects-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5em;
+
+}
+
+.projects-heading{
+    width:fit-content;
+    height:670px;  
+
+}
+
+.projects-heading h1{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 1em;
+    text-align: left;
+    font-size:5rem;
+}
+
+
+.projects-heading ul{
+    flex:1;
+    text-align: right;
+    
+    
+}
+
+.projects-heading ul li{
+    list-style: none;
+}
+
+
+
+.projects-heading ul li a{
+    margin: 10px 50px;
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    text-align: right;
+    padding-bottom:10px;
+    color:grey ;
+    font-weight:600;
+    filter: blur(2.5px);
+    transition: 0.5s ease-in-out;
+}
+
+.projects-heading ul li a:hover{
+    color:white;
+    filter:blur(0)
+}
+
+
+.project-card {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text{
+    margin:2em 2em;
+}
+
+.card-text h2, .card-text p {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#overview{
+    padding-top:25px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-card h2{
+    font-size: 3rem;
+}
+
+/* Changed #project-link to .project-link for reusability and fixed underline animation */
+#project-link {
+    width: fit-content; 
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+}
+
+#project-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease-in-out;
+}
+
+#project-link:hover::after {
+    width: 100%;
+}
+
+
+.card{
+    margin-top:auto;
+    margin-bottom:2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    height: 400px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-section {
+        flex-direction: column;
+        align-items: center;
+        gap:1em;
+    }
+
+    .projects-heading {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .projects-heading h1 {
+        font-size: 3rem;
+        text-align: left;
+        left: 2%;
+    }
+
+    .project-card {
+            width: 100%;
+
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-heading ul li a{
+    color:white;
+    filter: blur(0);
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        width: 60vw;
+        height: 100vh;
+        background: #141414;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 40px 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 150;
+    }
+    nav ul.active {
+        transform: translateX(0);
+    }
+    .hamburger {
+        display: flex;
+    }
+    nav {
+        position: relative;
+    }
+
+    
+}
