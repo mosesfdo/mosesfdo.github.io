@@ -3,69 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Moses D</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="Assets/mosesfdo-main-logo.svg" alt="mosesfdo-main-logo" class="logo">
-        <nav>
-            <div class="hamburger" id="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul id="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="work.html">Works</a></li>
-                <li><a href="#contact" id="contact-link">Contact Me</a></li>
+    <nav>
+        <a href="#home" class="top-logo">
+        <h1>mosesfdo</h1>
+        <p>Full Stack Developer</p>
+        </a>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        
+    </nav>
 
-    <main>
-        <section class="hero-section wrapper" id="home">
-            <div class="hero-text">
-                <p>Hi, Im Moses and Im a student</p>
-                <h1> Ai Engineer
-                <br>& Web Developer </h1>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mosesfdo/"><img src="Assets/linkedin.svg" alt="linkedin"></a>
+        <a href="https://github.com/mosesfdo"><img src="Assets/github.svg" alt="github"></a>
+        <a href="Assets/resume.pdf" download>
+            <img src="Assets/resume.svg" alt="resume">
+        </a>
+    </div>
+
+    <section id="Home" class="hero wrapper">
+
+        <div class="main-hero-text">
+        <h2>"I build apps that do the boring stuff
+            —so I can pretend I’m being productive."</h2>
+        <p>— yokoso —</p>
+        </div>
+
+    </section>
+
+   <section id="projects" class="wrapper">
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="Assets/tunegrab-scrn.png"TuneGrab Project Screenshot" class="card-img">
+                <div class="card-text">
+                    <h3>TuneGrab</h3>
+                    <a href="#" target="_blank">View Project</a>
+                    <p>TuneGrab is a Python application that allows users to download Spotify tracks and playlists as MP3 files using the Spotify API and yt-dlp. With a sleek, dark-themed GUI, it offers an intuitive way to manage your music collection.</p>
+                    <h4>Cause:</h4>
+                    <p>All I wanted was a simple app to download songs for free. After trying every sketchy tool on the internet, I gave up and built my own. TuneGrab does exactly what I wanted—no ads, no drama, just music.</p>
+                </div>
             </div>
-            <div >
-                <img src="Assets/main-picture.png" alt="" class="hero-picture">
+            
+            <!-- Project 2 -->
+            <div class="project-card reverse">
+                
+                <div class="card-text">
+                    <h3>TempMail</h3>
+                    <a href="#" target="_blank">View Project</a>
+                    <p>This project is a web application designed to simplify task management and collaboration. Built with React and Node.js, it features real-time updates and intuitive drag-and-drop functionality.</p>
+                    <h4>Cause:</h4>
+                    <p>Inspired by the need for better team collaboration tools, this project aims to streamline workflows and enhance productivity. It’s a solution born out of necessity and refined through user feedback.</p>
+                </div>
+                <img src="Assets/tempmail-scrn.png" alt="TempMail Project Screenshot" class="card-img">
             </div>
-        </section>
-
-        <section class="about-section ">
-            <div class="main-head-text">
-                <h1>
-                    Living affirmation that cognitive 
-                    excellence pairs well with 
-                    extreme physical reluctance.
-                </h1>
-                <img src="Assets/beserk.png" alt="graphic" class="about-graphic">
-            </div>
+        </div>
+    </section>
 
 
-            <div class="about-text">
-                <img src="Assets/mo-se.svg" alt="japanese name" class="japanese-name">
+    <section id="about" class="about">
+        <div class="wrapper">
+            <img src="Assets/about-image.jpg" alt="about-image" class="about-img">
+            <h2>“And he has filled him with the Spirit of God, with wisdom, with understanding,
+                 with knowledge and with all kinds of skills—to make artistic 
+                 designs for work in gold, silver and bronze...”</h2>
+            <p class="verse-mark">— Exodus 35:31-32</p>
+            <p>I’ve always been curious by nature. While most people around me 
+                just used computers, I found myself digging deeper—trying to
+                 understand how things worked under the hood. I was constantly 
+                 exploring, experimenting, and learning more than my peers. 
+                 One thing that always frustrated me? Finding the right software,
+                  app, or tool for what I needed. Nothing ever seemed to do exactly
+                   what I wanted. That’s when it hit me—‘Why not build my own?’ 
+                   A simple idea, maybe even a little wild at the time—but it
+                    changed everything. It pushed me to learn how to design and
+                     develop products myself. That spark turned into a passion. 
+                     Now, I don't just look for solutions
 
-                <div class="about-sub-content">
-                <p>
-                    A curious and methodical thinker, constantly exploring creativity and innovation in the realms of computer science and AI/ML.
-                </p>
-                <p>
-                    Moses is a student of Computer Science and AI/ML  driven by a deep curiosity that fuels his passion for problem-solving and UI design. He thrives on prototyping new interfaces and experimenting with emerging tools, blending a structured approach with a spirit of discovery.
-                </p>
-                <p>
-                    His technical toolkit includes Python, HTML, and CSS, reflecting a solid foundation in programming and web technologies. Outside academics, Moses balances coding side projects with working out and immersing himself in anime culture. At heart, he is a coder refining his craft, a fitness enthusiast pushing his limits, and an anime fan savoring stories. Always learning — always driven by the endless possibilities of technology and design.
-                </p>
-                <p>
-                    Hope to creating projects that make me even lazier.
-                </p>
-            </div>
-        </section>
-    </main>
+                    </p>
+                    <p>—I create them.</p>
+        </div>
+    </section>
 
-    <script src="index.js"></script>
+    <section id="contact" class="contact wrapper">
+
+        <h2>Contact Me</h2>
+        <p>Got a project, an idea, or just want to connect? I'm
+            always open to new opportunities and collaborations.
+        Reach out, and let's make something awesome.</p>
+            <a href="mailto:dmosesfernando@example.com" class="email-button">Email</a>
+        </form>
 </body>
 </html>

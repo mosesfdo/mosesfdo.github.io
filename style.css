@@ -1,0 +1,447 @@
+/* Font Imports */
+@font-face {
+    font-family: 'Astralaga';
+    src: url('Assets/Fonts/astralaga-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MediaSans';
+    src: url('Assets/Fonts/mediasans-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF-Compact-Display';
+    src: url('Assets/Fonts/SF-Compact-Display-Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF-Compact-Display';
+    src: url('Assets/Fonts/SF-Compact-Display-Ultralight.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF-Compact';
+    src: url('Assets/Fonts/SF-Compact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #fcfcfc;
+    color: #000;
+}
+
+body {
+    font-family: 'SF-Compact-Display', sans-serif;
+    background-color: #121212;
+    color: #cccccc;
+    letter-spacing: 0.5px;
+    padding-top: 0; /* Removed extra padding */
+  overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Astralaga', sans-serif;
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+
+
+/* NavBar Styles */
+
+.top-logo {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.top-logo h1 {
+    font-family: 'MediaSans', sans-serif;
+    font-size: 1.8rem;
+    color: #f0f0f0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.top-logo p{
+    font-family: 'SF-Compact-Display', sans-serif;
+    font-size: 0.8rem;
+    color: #cccccc;
+    font-weight: 200;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    transform: none; /* Ensure no zoom effect */
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    transform: translateY(20px);
+}
+
+nav ul li {
+
+    padding-top: 5px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #b6b6b6;
+    font-family: 'SF-Compact-Display', sans-serif;
+    font-weight: 100;
+    font-size: 14px; /* Fixed font size */
+    letter-spacing: 0px;
+    transform: none; /* Ensure no zoom effect */
+}
+
+nav ul a:hover {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* Updated social icons to float in a column layout */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    bottom: 20px; /* Positioned at the bottom */
+    left: 20px; /* Positioned at the left */
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Home*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;       /* or any unit like px, em, rem, %, vw */
+    height: 100vh;      /* 100% of the viewport height */
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-hero-text h2{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.main-hero-text p{
+    font-size: 1rem;
+    color: #cccccc;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+
+
+#projects {
+            height: auto;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            width: 100%;
+        }
+
+        .project-card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 16px;
+            background-color: rgba(255, 255, 255, 0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .project-card .card-img {
+            width: 55%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .project-card .card-text {
+            width: 45%;
+            text-align: left;
+        }
+        
+        .card-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .card-text h4 {
+            font-family: 'Astralaga', sans-serif;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: #888;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        
+        .card-text a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .card-text a::after {
+            content: '→';
+            margin-left: 8px;
+            transition: margin-left 0.3s ease;
+        }
+        
+        .card-text a:hover::after {
+            margin-left: 15px;
+        }
+
+        .card-text p {
+            text-align: left;
+            color: #cccccc;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+@media screen and (max-width: 768px) {
+            section {
+                padding: 80px 0;
+            }
+
+            .main-hero-text h2 {
+                font-size: 1.8rem;
+            }
+            
+            /* Stack project cards on mobile */
+            .project-card {
+                flex-direction: column;
+                gap: 25px;
+            }
+            
+            /* For the second card, reverse the column so image is on top */
+            .project-card.reverse {
+                flex-direction: column-reverse;
+            }
+
+            .project-card .card-img,
+            .project-card .card-text {
+                width: 100%;
+            }
+            
+            .card-text {
+                text-align: center;
+            }
+            
+            .card-text p, .card-text h3, .card-text h4 {
+                text-align: center;
+            }}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.about-img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    transform: translateY(-10%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h2{
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 200;
+}
+.verse-mark{
+    position: static;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+.about p{
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #9b9b9b;
+    font-weight: 100;
+    font-family: "SF-Compact-Display", sans-serif;
+    margin-top: 20px;
+}
+
+/* Updated CSS for the contact section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Astralaga", sans-serif;
+    font-weight: 200;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #9b9b9b;
+    font-family: "SF-Compact-Display", sans-serif;
+    font-weight: 100;
+    width: 400px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.email-button {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: #121212;
+    cursor: pointer;
+    font-family: "SF-Compact-Display", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.email-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure all sections and containers fit within the viewport */
+section, .projects-container, .project-card, .contact, .about {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix potential overflow caused by images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Adjust padding and margins for smaller screens */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .contact form {
+        padding: 10px;
+    }
+
+    .verse-mark {
+        margin-top: 15px;
+        font-size: 0.95rem;
+        margin-left: 0;
+    }
+    .about-img{
+        height: 250px;
+        width: 250px;
+    }
+}
+
