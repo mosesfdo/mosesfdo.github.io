@@ -191,7 +191,7 @@ nav ul li {
 
 nav ul a {
     text-decoration: none;
-    color: #b6b6b6;
+    color: #858484;
     font-family: 'SF-Compact-Display', sans-serif;
     font-weight: 100;
     font-size: 14px; /* Fixed font size */
@@ -203,6 +203,10 @@ nav ul a {
 nav ul a:hover {
     color: #ffffff;
     transition: color 0.3s ease-in-out;
+}
+
+nav ul li a.active {
+    color: #ffffff;
 }
 
 
